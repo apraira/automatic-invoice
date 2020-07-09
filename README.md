@@ -29,8 +29,17 @@ This bot purposes to help online shop (especially on twitter) to calculate custo
 1. Online shop should apply twitter developer acc first and install node js & twit library on their laptop/pc. 
    You can read the tutorial here: https://medium.com/science-friday-footnotes/how-to-make-a-twitter-bot-in-under-an-hour-259597558acf,
    If you already accepted as twitter developer acc and install node js & twit library, you can move on to the next step
-   
-2. Modify this section with your format (must be unique)
+
+2. Open the config.js provided and change this into your own..
+   ```javascript
+   module.exports={
+      consumer_key:         '...',
+      consumer_secret:      '...',
+      access_token:         '...',
+      access_token_secret:  '...',
+    }
+   ```   
+3. Modify this section with your format (must be unique)
 
    ```javascript
    var stream = T.stream('statuses/filter', { track: '#yourhashtag' }); 
@@ -45,7 +54,7 @@ This bot purposes to help online shop (especially on twitter) to calculate custo
    
    ```
    
-3. Modify this section with your catalogue list
+4. Modify this section with your catalogue list
 
    
    ```javascript
@@ -82,7 +91,7 @@ This bot purposes to help online shop (especially on twitter) to calculate custo
    - namaMenu is your catalogue name
 
    
-4. Push it to Heroku or another cloud server.
+5. Push it to Heroku or another cloud server.
    You can watch the tutorial here: https://www.youtube.com/watch?v=DwWPunpypNA
    
 # License
