@@ -1,4 +1,4 @@
-# Automatic Invoice
+# Automatic Invoice v1
 This is an automatic invoice twitter bot that helps you with your business on twitter
 
 # Purpose
