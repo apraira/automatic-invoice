@@ -7,7 +7,7 @@ var config = require('./config');
 var T = new Twit(config);
 
 //setting up stream to ngudangorder
-var stream = T.stream('statuses/filter', { track: '#ngudangorder' });
+var stream = T.stream('statuses/filter', { track: '#yourhashtag' }); //modify #yourhashtag with your uniqueness
 
 stream.on('tweet', order)
 
