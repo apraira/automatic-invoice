@@ -23,7 +23,7 @@ function order(data, err) {
     //tweet conversion ex:( "#ngudangorder shrimp bowl 7, mineral water 9" to ['shrimp bowl 7', 'mineral water 9']"
     var teksMenu_a = JSON.stringify(data.text);
     var teksMenu_1 = teksMenu_a.toLowerCase();
-    var teksMenu_2 = teksMenu_1.replace('#ngudangorder', '')
+    var teksMenu_2 = teksMenu_1.replace('#yourhashtag', '') //delete your hashtag because it's not needed
     var teksMenu_b = teksMenu_2.replace('"', '')
     var teksMenu_c = teksMenu_b.replace('.', '')
     var teksMenu_3 = teksMenu_c.split(',')
