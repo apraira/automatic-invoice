@@ -27,3 +27,4 @@ and the ```automaticInvoice.js``` is the main class or the starting point
 
 
 # Statistic
+I wrote 946 line of codes by myself it's on the ```order``` function
