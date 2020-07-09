@@ -1,16 +1,16 @@
-# automatic-invoice
+# Automatic Invoice
 This is an automatic invoice twitter bot that helps you with your business on twitter
 
-# purpose
+# Purpose
 This bot purposes to help online shop (especially on twitter) to calculate customer's order faster.
 
-# benefit
+# Benefit
 1. The online shop on twitter doesn't need to move from twitter application just only to calculate the invoice
 2. The online shop's services can be a lot faster
 
-# how to use this app
+# How to Use This App
 
-### for user
+### For User
 
 1. User can order by tweeting spesific format that provided by the online shop
 
@@ -24,7 +24,7 @@ This bot purposes to help online shop (especially on twitter) to calculate custo
 
 [insert picture]
 
-### for the online shop
+### For Online Shop
 
 
 1. Online shop should apply twitter developer acc first and install node js & twit library on their laptop/pc. 
