@@ -31,13 +31,56 @@ This bot purposes to help online shop (especially on twitter) to calculate custo
    If you already accepted as twitter developer acc and install node js & twit library, you can move on to the next step
    
 2. Modify this section with your format (must be unique)
-   [picture]
+
+   ```javascript
+   var stream = T.stream('statuses/filter', { track: '#yourhashtag' }); 
+   //modify #yourhashtag with your uniqueness
+   
+   ```
+   You need to modify this too 
+   
+   ```javascript
+   var teksMenu_2 = teksMenu_1.replace('#yourhashtag', '') 
+   //this will delete your hashtag because it's not needed
+   
+   ```
    
 3. Modify this section with your catalogue list
+
+   
+   ```javascript
+   else if (parseInt(teksMenu[i].split(' ').pop()) < 100) {
+                    
+                   else if (tks === 'your menu identifier') {
+                       
+                        //if quantity more than 9
+                        if (parseInt(teksMenu[i].slice(-1)) >= 0 && parseInt(teksMenu[i].slice(-2)) > 0) {
+                            n = parseInt(teksMenu[i].slice(-2)) // render the quantity (string to integer)
+                            var cal = price * n // ( price multiply quantity)
+                            var namaMenu = 'Menu/Your Item Name'
+
+                            //if the total is more than 1 million (in rupiah, if dollar change it on your own)
+                            if (cal >= 1000) {
+                                txt = txt + '\n' + n + ' ' + namaMenu + ': Rp' + + String(cal).charAt(0) + '.' + String(cal).slice(1) + '.000'
+                            } else { // if not
+                                txt = txt + '\n' + n + ' ' + namaMenu + ': Rp' + cal + '.000'
+                            }
+
+                            sum = sum + (cal)
+
+
+                        } else { // if order's quantity below 10
+                            n = parseInt(teksMenu[i].slice(-1))
+                            txt = txt + '\n' + n + ' ' + namaMenu + ': Rp' + cal + '.000'
+                            sum = sum + (cal)
+                        }
+                    }
+   
+   ```
    - cal is the price 
    - n is the quantity
    - namaMenu is your catalogue name
-   [picture]
+
    
 4. Push it to Heroku or another cloud server.
    You can watch the tutorial here: https://www.youtube.com/watch?v=DwWPunpypNA
