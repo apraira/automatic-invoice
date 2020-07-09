@@ -17,12 +17,11 @@ This bot purposes to help online shop (especially on twitter) to calculate custo
    example format:
 
    #heyorder (space) menu (quantity) (comma) (space) menu (quantity) 
+![atu](https://user-images.githubusercontent.com/43996652/87069268-19383c00-c241-11ea-957d-90bc4303fc5f.jpg)
 
-[picture]
 
 2. After tweeting that spesific format, the user will get replies from the online shop
-
-[insert picture]
+![Inkedexample_2_LI](https://user-images.githubusercontent.com/43996652/87069481-73d19800-c241-11ea-9028-16a84b774495.jpg)
 
 ### For Online Shop
 
